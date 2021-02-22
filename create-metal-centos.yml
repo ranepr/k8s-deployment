@@ -12,7 +12,7 @@
       headers:
         X-Auth-Token: "{{ api_key }}"
       body: >
-        {"facility": "{{ facility }}", "plan": "{{ plan }}", "billing_cycle": "hourly", "hostname": "{{ hostname }}", "operating_system": "centos_7", "ip_addresses":[{"address_family": 4, "public": true, "cidr": "31" }, {"address_family": 4, "public": false, "cidr": "31"}]}
+        {"facility": "{{ facility }}", "plan": "{{ plan }}", "billing_cycle": "hourly", "quantity": "{{ quantity }}", "hostname": "{{ hostname }}", "operating_system": "centos_7", "ip_addresses":[{"address_family": 4, "public": true, "cidr": "31" }, {"address_family": 4, "public": false, "cidr": "31"}]}
       status_code: 201
     register: create_devices
     
